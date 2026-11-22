@@ -29,6 +29,10 @@ A dark anime-inspired theme for [Vencord](https://vencord.dev/) and [Equicord](h
 
 The theme imports the base System24 stylesheet from the web, so that stylesheet must remain reachable for the theme to load fully. The background image is also loaded from an external URL.
 
+### Optional background URL plugin
+
+The [System32 Background companion plugin](./plugins/system32Background/README.md) adds a plugin setting for changing the background image URL without editing this CSS file. It is a custom Vencord-style plugin and requires a source-built client; see its README for setup details.
+
 ## Credits
 
 - Base theme: [System24 by refact0r](https://github.com/refact0r/system24)
