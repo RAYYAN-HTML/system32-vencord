@@ -31,7 +31,7 @@ The theme imports the base System24 stylesheet from the web, so that stylesheet 
 
 ### Optional background URL plugin
 
-The [System32 Background companion plugin](./plugins/system32Background/README.md) adds a plugin setting for changing the background image URL without editing this CSS file. It is a custom Vencord-style plugin and requires a source-built client; see its README for setup details.
+The [Background Image URL plugin](./plugins/backgroundImageUrl/README.md) changes backgrounds for themes that use a CSS custom property. It is not limited to System32 Anime. It is a custom Vencord-style user plugin and requires a source-built client; see its README for setup details.
 
 ## Credits
 
