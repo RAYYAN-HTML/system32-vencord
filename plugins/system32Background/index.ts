@@ -1,3 +1,9 @@
+/*
+ * Vencord, a Discord client mod
+ * Copyright (c) 2026 Rayyan
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 import { definePluginSettings } from "@api/Settings";
 import definePlugin, { OptionType } from "@utils/types";
 
@@ -14,7 +20,7 @@ const settings = definePluginSettings({
 const CSS_VARIABLE = "--background-image-url";
 
 function applyBackground() {
-    const body = document.body;
+    const { body } = document;
     if (!body) return;
 
     const value = settings.store.backgroundUrl.trim();
@@ -41,7 +47,7 @@ function applyBackground() {
 export default definePlugin({
     name: "System32Background",
     description: "Change the System32 Anime theme background with an image URL.",
-    authors: [{ name: "Rayyan" }],
+    authors: [{ name: "Rayyan", id: 1512423297428492435n }],
     settings,
 
     start: applyBackground,
