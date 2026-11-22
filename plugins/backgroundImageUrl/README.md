@@ -11,6 +11,3 @@ For example, if a theme defines `--my-theme-bg: url("...")`, enter `--my-theme-b
 
 The plugin sets the selected property on `body`, so themes should use that property on `body` or inherit it on their background element. Themes that hard-code `background-image: url(...)` directly, without a configurable custom property, are not compatible unless their CSS is changed to use one. Image hosts may also block requests from Discord; use a direct image URL that is publicly accessible.
 
-## Install
-
-This is a Vencord-style user plugin, not a standalone BetterDiscord plugin. Add `index.ts` under `src/userplugins/backgroundImageUrl/` in a Vencord or Equicord source checkout, rebuild the client, then enable **BackgroundImageURL** and set the two options in plugin settings.
