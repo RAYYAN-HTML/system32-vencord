@@ -1,0 +1,244 @@
+/**
+ * @name System32 Anime
+ * @description A dark anime-inspired Vencord and Equicord theme based on System24.
+ * @author Rayyan
+ * @version 2.0.0
+ */
+@import url('https://refact0r.github.io/system24/build/system24.css');
+
+body {
+    --font: 'DM Mono';
+    --code-font: 'DM Mono';
+    font-weight: 300;
+
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 2px;
+    --border-hover-transition: 0.2s ease;
+
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+
+    --custom-window-controls: off;
+    --window-control-size: 14px;
+
+    --custom-dms-icon: off;
+    --dms-icon-svg-url: url('');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
+
+    --background-image: on;
+    --background-image-url: url('https://backiee.com/static/wallpapers/3840x2160/460230.jpg');
+
+    --transparency-tweaks: on;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+
+    --small-user-panel: on;
+    --unrounding: on;
+
+    --custom-spotify-bar: on;
+    --ascii-titles: on;
+    --ascii-loader: off;
+
+    --panel-labels: on;
+    --label-color: var(--text-muted);
+    --label-font-weight: 500;
+}
+
+:root {
+    --colors: on;
+
+    --text-0: var(--bg-4);
+    --text-1: oklch(95% 0 0);
+    --text-2: oklch(85% 0 0);
+    --text-3: oklch(75% 0 0);
+    --text-4: oklch(60% 0 0);
+    --text-5: oklch(40% 0 0);
+
+    --bg-1: oklch(31% 0 0);
+    --bg-2: oklch(27% 0 0);
+    --bg-3: oklch(23% 0 0 / 0.65);
+    --bg-4: oklch(19% 0 0 / 0.72);
+
+    --hover: oklch(58% 0.12 18 / 0.1);
+    --active: oklch(58% 0.12 18 / 0.18);
+    --active-2: oklch(58% 0.12 18 / 0.26);
+    --message-hover: var(--hover);
+
+    --accent-1: var(--red-1);
+    --accent-2: var(--red-2);
+    --accent-3: var(--red-3);
+    --accent-4: var(--red-4);
+    --accent-5: var(--red-5);
+    --accent-new: var(--red-2);
+
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+
+    --online: var(--green-2);
+    --dnd: var(--red-2);
+    --idle: var(--yellow-2);
+    --streaming: var(--purple-2);
+    --offline: var(--text-4);
+
+    --border-light: var(--hover);
+    --border: var(--active);
+    --border-hover: var(--accent-2);
+    --button-border: oklch(65% 0.1 18 / 0.18);
+
+    --red-1: oklch(75% 0.13 0);
+    --red-2: oklch(70% 0.13 0);
+    --red-3: oklch(65% 0.13 0);
+    --red-4: oklch(60% 0.13 0);
+    --red-5: oklch(55% 0.13 0);
+
+    --green-1: oklch(75% 0.12 170);
+    --green-2: oklch(70% 0.12 170);
+    --green-3: oklch(65% 0.12 170);
+    --green-4: oklch(60% 0.12 170);
+    --green-5: oklch(55% 0.12 160);
+
+    --blue-1: oklch(75% 0.11 215);
+    --blue-2: oklch(70% 0.11 215);
+    --blue-3: oklch(65% 0.11 215);
+    --blue-4: oklch(60% 0.11 215);
+    --blue-5: oklch(55% 0.11 215);
+
+    --yellow-1: oklch(80% 0.12 90);
+    --yellow-2: oklch(75% 0.12 90);
+    --yellow-3: oklch(70% 0.12 90);
+    --yellow-4: oklch(65% 0.12 90);
+    --yellow-5: oklch(60% 0.12 90);
+
+    --purple-1: oklch(75% 0.12 310);
+    --purple-2: oklch(70% 0.12 310);
+    --purple-3: oklch(65% 0.12 310);
+    --purple-4: oklch(60% 0.12 310);
+    --purple-5: oklch(55% 0.12 310);
+}
+
+#app-mount .panels_c48ade,
+#app-mount .panels_c48ade::before,
+#app-mount .panels_c48ade::after,
+#app-mount .panels_c48ade .container__37e49,
+#app-mount .panels_c48ade .avatarWrapper__37e49 {
+    background: #171619 !important;
+    background-image: none !important;
+    border: 1px solid oklch(55% 0.14 18 / 0.24) !important;
+    box-shadow: inset 0 0 10px oklch(45% 0.14 18 / 0.08);
+}
+
+@keyframes animeBackgroundDrift {
+    from {
+        background-position: 50% 50%;
+    }
+
+    to {
+        background-position: 54% 47%;
+    }
+}
+
+#app-mount .bg_Fd0FEH {
+    animation: animeBackgroundDrift 45s ease-in-out infinite alternate;
+}
+
+@keyframes discordWholeScreenBreath {
+    from {
+        filter: brightness(0.97);
+    }
+
+    to {
+        filter: brightness(1);
+    }
+}
+
+#app-mount {
+    animation: discordWholeScreenBreath 24s ease-in-out infinite alternate;
+}
+
+#app-mount [class*="peopleListItem"] {
+    border-radius: 6px;
+    transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+#app-mount [class*="peopleListItem"]:hover {
+    background-color: rgba(210, 38, 54, 0.16) !important;
+    box-shadow: inset 3px 0 0 var(--red-2);
+    transform: translateX(3px);
+}
+
+#app-mount button[class*="addFriend"],
+#app-mount [role="tab"][class*="addFriend"] {
+    background-color: var(--red-3) !important;
+    border-color: var(--red-3) !important;
+    transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+
+#app-mount button[class*="addFriend"]:hover,
+#app-mount [role="tab"][class*="addFriend"]:hover {
+    background-color: var(--red-2) !important;
+    box-shadow: 0 0 12px rgba(210, 38, 54, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #app-mount,
+    #app-mount .bg_Fd0FEH {
+        animation: none !important;
+    }
+
+    #app-mount [class*="peopleListItem"],
+    #app-mount button[class*="addFriend"],
+    #app-mount [role="tab"][class*="addFriend"] {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+/* System32 ASCII loader branding */
+#app-mount .content_oDjP9R {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#app-mount .content_oDjP9R > .spinner_oDjP9R {
+    display: none;
+}
+
+#app-mount .content_oDjP9R::before {
+    display: block;
+    content: ' _____               _                     _____  _____ \A /  ___|             | |                   |____ |/ __  \\\A \\ `--.  _   _  ___  | |_   ___  _ __ ___      / /`\' / /\'\A  `--. \\| | | |/ __| | __| / _ \\| \'_ ` _ \\     \\ \\  / /  \A /\\__/ /| |_| |\\__ \\ | |_ |  __/| | | | | |.___/ /./ /___\A \\____/  \\__, ||___/  \\__| \\___||_| |_| |_|\\____/ \\_____/\A          __/ |                                          \A         |___/                                           ';
+    font: 18px/1.2 monospace;
+    white-space: pre;
+    letter-spacing: 0;
+    text-align: left;
+    width: max-content;
+    text-shadow: none;
+    -webkit-text-stroke: 0;
+    background: linear-gradient(to right, var(--red-5) 0%, var(--red-1) 25%, var(--red-1) 75%, var(--red-5) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: textShine 1.5s linear infinite reverse;
+}
+
+#app-mount .content_oDjP9R > .text_oDjP9R {
+    position: static;
+}
